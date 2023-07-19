@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<link th:href="@{/css/social.css}" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3b085ba6e6.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>
+		<i class="fa-solid fa-paw"></i><a href="/"> ANIMALSPOH</a>
+	</h1>
+	<div class="join-wrapper">
+		<h2>로그인</h2>
+		<form method="post" action="/auth/loginProc" id="login-form">
+			<a href="/oauth2/authorization/google"> 
+			<img class="img" src="/images/btn_google_signin_dark_normal_web@2x.png" /></a> 
+			<a href="/oauth2/authorization/facebook"> 
+			<img class="img" src="/images/login-button-facebook.png" /></a>
+			<a href="/oauth2/authorization/naver">
+			<img class="img" src="/images/btnG_naver.png" /></a>
+			<a href="/oauth2/authorization/kakao">
+			<img class="img"  src="/images/kakao_login_large_wide.png">
+			</a>
+			  <a href="/login"><input type="button" value="아이디 로그인"></a>
+		</form>
+	</div>
+</body>
+</html>
